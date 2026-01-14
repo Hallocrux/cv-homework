@@ -1,0 +1,127 @@
+{
+    "camera": {
+        "source": "http://192.168.137.69:4747/video",
+        "calib_file": "tools/calib/camera_calib.npz"
+    },
+    "yolo": {
+        "model": "yolov8n-seg.pt",
+        "conf_thres": 0.5,
+        "iou_thres": 0.4
+    },
+    "aruco": {
+        "dict_type": "DICT_4X4_50",
+        "marker_size": 0.05,
+        "world_layout": {
+            "0": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "1": [
+                -0.2,
+                0.175,
+                0.0
+            ],
+            "2": [
+                0.25,
+                0.175,
+                0.0
+            ],
+            "3": [
+                0.25,
+                -0.205,
+                0.0
+            ],
+            "4": [
+                -0.2,
+                -0.205,
+                0.0
+            ]
+        }
+    },
+    "voxel_space": {
+        "x_range": [
+            -0.2,
+            0.25
+        ],
+        "y_range": [
+            -0.205,
+            0.175
+        ],
+        "z_range": [
+            0.0,
+            0.3
+        ],
+        "resolution": 0.01,
+        "prob_hit": 0.2,
+        "prob_miss": 0.2,
+        "threshold_high": 0.95,
+        "lo_max": 3.5,
+        "lo_min": -3.5,
+        "visualization": {
+            "render_threshold_scan": 0.5,
+            "render_threshold_lock": 0.9,
+            "enable_high_conf_highlight": true,
+            "high_conf_threshold": 0.9,
+            "color_scan_base": [
+                0,
+                255,
+                0
+            ],
+            "color_scan_high": [
+                0,
+                0,
+                255
+            ],
+            "color_locked": [
+                255,
+                0,
+                0
+            ],
+            "color_touched": [
+                255,
+                255,
+                0
+            ]
+        }
+    },
+    "keyframe": {
+        "min_dist": 0.01,
+        "min_angle": 0.05
+    },
+    "hand_model": {
+        "wrist_to_index": 0.11923178498944184,
+        "wrist_to_middle": 0.11908557414933449,
+        "wrist_to_ring": 0.11383935269797656,
+        "wrist_to_pinky": 0.10249605565206912,
+        "palm_width_5_17": 0.07852948839482822,
+        "z_offset": 0.012
+    },
+    "hand_pnp_model": {
+        "5": [
+            -0.07339453038851304,
+            0.05524774998751514,
+            0.0
+        ],
+        "9": [
+            -0.054393350494329445,
+            0.07201236795183176,
+            0.0
+        ],
+        "13": [
+            -0.03470516685923128,
+            0.07865226492434307,
+            -3.469446951953614e-18
+        ],
+        "17": [
+            -0.016243953398231453,
+            0.07787424843651927,
+            -3.469446951953614e-18
+        ]
+    },
+    "bone_lengths": {
+        "5_6": 0.04337362423600151,
+        "6_7": 0.021548124270412253,
+        "7_8": 0.018402395828552996
+    }
+}

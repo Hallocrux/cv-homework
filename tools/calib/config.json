@@ -1,0 +1,6 @@
+{
+    "camera_source": "http://192.168.72.231:4747/video",
+    "board_size": [9, 6],
+    "square_size_mm": 25.0,
+    "min_samples": 15
+}
